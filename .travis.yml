@@ -11,3 +11,11 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y libjson0-dev libjson0 php5-cli php5-dev  liblua5.2-dev
 
+
+before_script:
+    # Compile PHP
+    - ./travis/compile.sh
+
+script: 
+ - ./travis/build_check.sh
+
