@@ -15,6 +15,8 @@ try {
     assert($e->getCode() == LUA_ERRSYNTAX);
     echo "\n", $e->getMessage();
 }
+
+?>
 --EXPECTF--
 12
 -0.53657291800043
